@@ -16,8 +16,8 @@ RUN R -e "install.packages(c('shinydashboard', 'tidyverse', 'leaflet', 'DT', 'pl
 
 # Clean the default shiny-server directory and copy your app files
 RUN rm -rf /srv/shiny-server/*
-COPY app.R /srv/shiny-server/
-COPY Expanded_iGAS_Genomic_Data.csv /srv/shiny-server/
+COPY GAS_app.R /srv/shiny-server/
+COPY Example_GAS_Genomic_Data.csv /srv/shiny-server/
 
 # Set the working directory
 WORKDIR /srv/shiny-server/
