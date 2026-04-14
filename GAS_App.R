@@ -7,7 +7,7 @@ library(DT)
 library(plotly)
 
 # Load the fictional dataset
-data <- read.csv("Expanded_iGAS_Genomic_Data.csv")
+data <- read.csv("Example_GAS_Genomic_Data.csv")
 
 # Identify columns to use for the overview dropdown 
 # (Excluding ID and coordinate columns)
